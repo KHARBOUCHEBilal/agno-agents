@@ -1,0 +1,13 @@
+agno
+anthropic
+openai
+yfinance
+duckduckgo-search
+fastapi
+pandas
+python-dotenv
+streamlit
+cohere
+groq
+pygithub
+altair
