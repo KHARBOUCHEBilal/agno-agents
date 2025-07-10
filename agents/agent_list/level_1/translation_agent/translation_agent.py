@@ -8,7 +8,12 @@ from textwrap import dedent
 from agno.agent import Agent
 from agno.models.openai import OpenAIChat
 from agno.tools.cartesia import CartesiaTools
-from agno.utils.media import save_audio
+# from agno.utils.media import save_audio  # Removed: unknown import symbol
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv(os.path.join(os.path.dirname(__file__), '../../../.env'))
 
 agent_instructions = dedent(
     f"""Follow these steps SEQUENTIALLY to translate text and generate a localized voice note:
@@ -50,7 +55,8 @@ agent.print_response(
 response = agent.run_response
 
 print("\nChecking for Audio Artifacts on Agent...")
-if response.audio:
-    save_audio(
-        base64_data=response.audio[0].base64_audio, output_path="tmp/greeting.mp3"
-    )
+if response is not None and hasattr(response, "audio") and response.audio:
+    # TODO: Implement audio saving functionality here if needed.
+    print("Audio data received, but 'save_audio' function is not available.")
+else:
+    print("No audio data found in response.")

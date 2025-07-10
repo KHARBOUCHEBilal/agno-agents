@@ -1,0 +1,76 @@
+(.venv) PS C:\Users\bilal\Desktop\agno-Test> python agents/agent_list/level_1/web_extraction_agent/web_extraction_agent.py
+PageInformation(
+│   url='https://www.agno.com',
+│   title='Agno - Pure AI agents: model agnostic, blazing fast, future proof',
+│   description='An open-source platform to build, ship and monitor agentic systems.',
+│   features=[
+│   │   'Open-source framework for building agentic systems',
+│   │   'Build high performance, model-agnostic, and technology-agnostic AI agents',
+│   │   'Add knowledge, memory, and reasoning to agents',
+│   │   'Built-in memory for long-term personalized conversations',
+│   │   'Integration with external systems through tools',
+│   │   'Full-stack workflows: build, ship, and monitor agents',
+│   │   'Lightning-fast agent startup (~2μs) and minimal memory footprint',
+│   │   'Supports any LLM model/provider and vector/database (Pinecone, LanceDb, Singlestore, etc.)',
+│   │   "Production-ready deployment (bring your own cloud or use Agno's)",
+│   │   'Monitoring, evaluation, and optimization capabilities',
+│   │   'Pre-built AI product templates',
+│   │   'Pro tier with advanced monitoring, human review, and automated DevOps (coming soon)',
+│   │   'Enterprise tier with tailored features (security, guardrails, reviews, custom solutions)',
+│   │   'Free for students, educators, and early-stage startups'
+│   ],
+│   content_sections=[
+│   │   ContentSection(
+│   │   │   heading='Build high performance Agents with memory, knowledge and reasoning',
+│   │   │   content='Agno enables the creation of high performance agents with built-in memory, domain-specific knowledge, and reasoning. Agents can be enhanced with tools to interact with external systems and can utilize any LLM from any provider. The platform provides an agent playground for experimentation and offers pre-built AI product templates.'
+│   │   ),
+│   │   ContentSection(
+│   │   │   heading='Build, ship and monitor full-stack Agentic Systems',
+│   │   │   content='Agno provides workspaces to build, deploy, and monitor agents. It facilitates the setup of databases, vector stores, APIs, and other required infrastructure, allowing projects to go from development to production in minutes. The monitoring platform tracks agent runs, token usage, and quality, enabling evaluation and ongoing optimization.'
+│   │   ),
+│   │   ContentSection(
+│   │   │   heading='Designed for performance & scale',
+│   │   │   content='Agno was developed with a focus on extreme performance and scalability. It supports spawning thousands of agents quickly, with low memory usage, and is agnostic to both models and technologies. Agno supports bring-your-own infrastructure for future-proof deployments.'
+│   │   ),
+│   │   ContentSection(
+│   │   │   heading='Pricing',
+│   │   │   content='Agno offers a free framework for building agents (with basic monitoring and manual deployment), an upcoming Pro plan with advanced monitoring and evaluations, and an Enterprise plan with security, guardrails, custom AI solutions, and dedicated support. Pro is free for students, educators, and startups with less than $2 million in funding.'
+│   │   ),
+│   │   ContentSection(
+│   │   │   heading='FAQs',
+│   │   │   content='Agno works with any LLM (OpenAI, Anthropic, Cohere, Ollama, Together, Anyscale, and more) and any database/vector store (including Pinecone, LanceDb, Singlestore). Additional integrations are regularly added upon request. Discounted or free Pro access is available for academic and startup users.'
+│   │   ),
+│   │   ContentSection(
+│   │   │   heading='Build your Agent today',
+│   │   │   content='Agno enables the creation of LLM-powered agents that are smarter using memory, knowledge, and tools. Get started through the docs or by booking a call.'  
+│   │   )
+│   ],
+│   links={
+│   │   'LOGIN': 'https://app.agno.com/',
+│   │   'TRY DEMO': 'https://app.agno.com/playground',
+│   │   'Build your AGENT / Docs': 'https://docs.agno.com/',
+│   │   'Pre-built templates': 'https://docs.agno.com/',
+│   │   'Example gallery': 'https://docs.agno.com/examples/introduction',
+│   │   'Docs – Supported LLMs': 'https://docs.agno.com/models/introduction',
+│   │   'Docs – Supported DB/Vector Stores': 'https://docs.agno.com/vectordb/introduction',
+│   │   'Book a call': 'https://cal.com/team/agno/intro',
+│   │   'GitHub': 'https://github.com/agno-agi/agno',
+│   │   'Agent Monitoring Platform': 'https://app.agno.com/',
+│   │   'AG-UI Protocol Docs': 'https://docs.agno.com/applications/ag-ui/introduction',
+│   │   'Hackathon details': 'https://www.agno.com/blog/open-source-agent-hackathon',
+│   │   'Blog': 'https://www.agno.com/blog',
+│   │   'Changelog': 'https://www.agno.com/changelog'
+│   },
+│   contact_info={'Support Email': 'support@agno.com'},
+│   metadata={
+│   │   'language': 'en',
+│   │   'og:title': 'Agno - Pure AI agents: model agnostic, blazing fast, future proof',
+│   │   'og:description': 'An open-source platform to build, ship and monitor agentic systems.',
+│   │   'og:image': 'https://cdn.prod.website-files.com/66e0d4ef58ba78f56e23564e/67915b121eb77f57ab4fc797_opengraph%202.png',
+│   │   'twitter:title': 'Agno - Pure AI agents: model agnostic, blazing fast, future proof',
+│   │   'twitter:description': 'An open-source platform to build, ship and monitor agentic systems.',
+│   │   'twitter:image': 'https://cdn.prod.website-files.com/66e0d4ef58ba78f56e23564e/67915b121eb77f57ab4fc797_opengraph%202.png',
+│   │   'favicon': 'https://cdn.prod.website-files.com/6796d350b8c706e4533e7e32/6796d350b8c706e4533e8019_Favicon%20small.png',
+│   │   'viewport': 'width=device-width, initial-scale=1'
+│   }
+)

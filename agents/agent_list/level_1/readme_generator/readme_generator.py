@@ -3,6 +3,11 @@ from agno.models.openai import OpenAIChat
 from agno.tools.github import GithubTools
 from agno.tools.local_file_system import LocalFileSystemTools
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv(os.path.join(os.path.dirname(__file__), '../../../.env'))
+
 readme_gen_agent = Agent(
     model=OpenAIChat(id="gpt-4o"),
     name="Readme Generator Agent",

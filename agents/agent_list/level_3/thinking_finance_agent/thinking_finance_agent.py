@@ -17,13 +17,26 @@ Run: `pip install openai yfinance agno` to install the dependencies
 
 from textwrap import dedent
 
+
+import os
+from pathlib import Path
+from dotenv import load_dotenv
 from agno.agent import Agent
 from agno.models.openai import OpenAIChat
 from agno.tools.thinking import ThinkingTools
 from agno.tools.yfinance import YFinanceTools
 
+
+# Load .env from the same folder as this script
+dotenv_path = Path(__file__).parent / '.env'
+load_dotenv(dotenv_path=dotenv_path)
+openai_api_key = os.getenv('OPENAI_API_KEY')
+if not openai_api_key:
+    raise RuntimeError("OPENAI_API_KEY not found in .env file. Please add it and try again.")
+os.environ['OPENAI_API_KEY'] = openai_api_key
+
 finance_agent = Agent(
-    model=OpenAIChat(id="gpt-4o"),
+    model=OpenAIChat(id="gpt-4o", api_key=openai_api_key),
     tools=[ThinkingTools(add_instructions=True), YFinanceTools(enable_all=True)],
     instructions=dedent("""\
         You are a seasoned Wall Street analyst with deep expertise in market analysis! 📊

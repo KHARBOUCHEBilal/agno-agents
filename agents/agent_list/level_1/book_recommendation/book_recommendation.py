@@ -20,6 +20,11 @@ from agno.agent import Agent
 from agno.models.openai import OpenAIChat
 from agno.tools.exa import ExaTools
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv(os.path.join(os.path.dirname(__file__), '../../../.env'))
+
 book_recommendation_agent = Agent(
     name="Shelfie",
     tools=[ExaTools()],

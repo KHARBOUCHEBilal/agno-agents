@@ -8,6 +8,11 @@ from pydantic import BaseModel, Field
 from rich.pretty import pprint
 
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv(os.path.join(os.path.dirname(__file__), '../../../.env'))
+
 class ContentSection(BaseModel):
     """Represents a section of content from the webpage."""
 

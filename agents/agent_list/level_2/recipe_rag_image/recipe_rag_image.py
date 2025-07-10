@@ -50,5 +50,10 @@ agent.print_response(
 )
 
 response = agent.run_response
-if response.images:
+if (
+    response is not None
+    and hasattr(response, "images")
+    and response.images
+    and getattr(response.images[0], "url", None) is not None
+):
     download_image(response.images[0].url, Path("tmp/recipe_image.png"))

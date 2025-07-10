@@ -1,0 +1,62 @@
+PS C:\Users\bilal\Desktop\agno-Test> C:/Users/bilal/Desktop/agno-Test/.venv/Scripts/python.exe c:/Users/bilal/Desktop/agno-Test/agents/agent_list/level_2/agent_with_knowledge/agent_with_knowledge.py
+INFO Loading knowledge base
+INFO Added 2 documents to knowledge base
+ERROR    Error searching for documents: The lance library is required to use this function. Please install with `pip install 
+         pylance`.
+┏━ Message ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                                                                                           ┃
+┃ What are Agents?                                                                                                          ┃
+┃                                                                                                                           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┏━ Reasoning step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                                                                                           ┃
+┃ Determine the context of 'Agents'                                                                                         ┃
+┃ Action: Search the knowledge base for information about the term 'Agents' in various contexts.                            ┃
+┃                                                                                                                           ┃
+┃ Reasoning: The term 'Agents' can have various meanings depending on the context. It could refer to AI agents, real estate ┃
+┃ agents, secret agents, etc. To provide a meaningful answer, I need to determine the intended context in which the user is ┃
+┃ referring to 'Agents.' A search in the knowledge base might yield a broad overview or different contexts for the term     ┃
+┃ 'Agents.'                                                                                                                 ┃
+┃ Confidence: 0.9                                                                                                           ┃
+┃                                                                                                                           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┏━ Reasoning step 2 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                                                                                           ┃
+┃ Analyze absence of search results                                                                                         ┃
+┃ No documents found for 'Agents in various contexts'.                                                                      ┃
+┃ Reasoning: The lack of specific documents suggests that 'Agents' might not have a well-defined entry across contexts in   ┃
+┃ the knowledge base. However, based on general knowledge, 'Agents' can refer to artificial intelligence entities,          ┃
+┃ individuals working in an agency capacity, or characters in various fields like literature or movies. Each type has       ┃
+┃ distinct characteristics, purposes, and applications.                                                                     ┃
+┃ Confidence: 0.8                                                                                                           ┃
+┃                                                                                                                           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┏━ Tool Calls ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                                                                                           ┃
+┃ • think(title=Determine the context of 'Agents', thought=The term 'Agents' can have various meanings depending on the     ┃
+┃ context. It could refer to AI agents, real estate agents, secret agents, etc. To provide a meaningful answer, I need to   ┃
+┃ determine the intended context in which the user is referring to 'Agents.' A search in the knowledge base might yield a   ┃
+┃ broad overview or different contexts for the term 'Agents.', action=Search the knowledge base for information about the   ┃
+┃ term 'Agents' in various contexts., confidence=0.9)                                                                       ┃
+┃ • search_knowledge_base(query=Agents in various contexts)                                                                 ┃
+┃ • analyze(title=Analyze absence of search results, result=No documents found for 'Agents in various contexts'.,           ┃
+┃ analysis=The lack of specific documents suggests that 'Agents' might not have a well-defined entry across contexts in the ┃
+┃ knowledge base. However, based on general knowledge, 'Agents' can refer to artificial intelligence entities, individuals  ┃
+┃ working in an agency capacity, or characters in various fields like literature or movies. Each type has distinct          ┃
+┃ characteristics, purposes, and applications., next_action=final_answer, confidence=0.8)                                   ┃
+┃                                                                                                                           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┏━ Response (18.1s) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                                                                                           ┃
+┃ The term "Agents" can refer to different entities depending on the context:                                               ┃
+┃                                                                                                                           ┃
+┃  1 Artificial Intelligence Agents: These are autonomous entities that can perceive their environment and take actions to  ┃
+┃    achieve specific goals. AI agents can be software-based, such as chatbots or recommendation systems, or they can       ┃
+┃    control physical devices like robots.                                                                                  ┃
+┃  2 Real Estate Agents: Individuals who are licensed to negotiate and arrange real estate transactions. They typically     ┃
+┃    work with buyers, sellers, landlords, and tenants in purchasing, selling, or renting properties.                       ┃
+┃  3 Secret Agents: Often associated with espionage, these are individuals employed by governments or organizations to      ┃
+┃    gather intelligence. They are sometimes portrayed in literature and films as spies.                                    ┃
+┃  4 User Agents: In computing, this refers to software that acts on behalf of a user, such as a web browser.               ┃
+┃                                                                                                                           ┃
+┃ If you are referring to a specific type of agent, please clarify for a more detailed explanation. 

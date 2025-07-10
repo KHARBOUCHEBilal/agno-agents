@@ -21,6 +21,11 @@ from agno.agent import Agent
 from agno.models.openai import OpenAIChat
 from agno.tools.exa import ExaTools
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv(os.path.join(os.path.dirname(__file__), '../../../.env'))
+
 recipe_agent = Agent(
     name="ChefGenius",
     tools=[ExaTools()],
