@@ -1,0 +1,206 @@
+Test/agents/agent_list/level_4/agent_team/agent_team.py
+┏━ Message ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                                                                                           ┃
+┃ Analyze the semiconductor market performance focusing on:                                                                 ┃
+┃ - NVIDIA (NVDA)                                                                                                           ┃
+┃ - AMD (AMD)                                                                                                               ┃
+┃ - Intel (INTC)                                                                                                            ┃
+┃ - Taiwan Semiconductor (TSM)                                                                                              ┃
+┃ Compare their market positions, growth metrics, and future outlook.                                                       ┃
+┃                                                                                                                           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┏━ Finance Agent Tool Calls ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                                                                                           ┃
+┃ • get_current_stock_price(symbol=NVDA)                                                                                    ┃
+┃                                                                                                                           ┃
+┃ • get_company_info(symbol=NVDA)                                                                                           ┃
+┃                                                                                                                           ┃
+┃ • get_current_stock_price(symbol=AMD)                                                                                     ┃
+┃                                                                                                                           ┃
+┃ • get_company_info(symbol=AMD)                                                                                            ┃
+┃                                                                                                                           ┃
+┃ • get_current_stock_price(symbol=INTC)                                                                                    ┃
+┃                                                                                                                           ┃
+┃ • get_company_info(symbol=INTC)                                                                                           ┃
+┃                                                                                                                           ┃
+┃ • get_current_stock_price(symbol=TSM)                                                                                     ┃
+┃                                                                                                                           ┃
+┃ • get_company_info(symbol=TSM)                                                                                            ┃
+┃                                                                                                                           ┃
+┃ • get_analyst_recommendations(symbol=NVDA)                                                                                ┃
+┃                                                                                                                           ┃
+┃ • get_analyst_recommendations(symbol=AMD)                                                                                 ┃
+┃                                                                                                                           ┃
+┃ • get_analyst_recommendations(symbol=INTC)                                                                                ┃
+┃                                                                                                                           ┃
+┃ • get_analyst_recommendations(symbol=TSM)                                                                                 ┃
+┃                                                                                                                           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┏━ Finance Agent Response ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                                                                                           ┃
+┃ Here is the current stock prices and company information for NVIDIA (NVDA), AMD (AMD), Intel (INTC), and Taiwan           ┃
+┃ Semiconductor (TSM):                                                                                                      ┃
+┃                                                                                                                           ┃
+┃                                                                                                                           ┃
+┃                       Current                                                                                             ┃
+┃   Company             Stock       Market                                                52 Week    52 Week                ┃
+┃   Name       Symbol   Price       Cap        Sector      Industry   EPS     P/E Ratio   Low        High        Website    ┃
+┃  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ┃
+┃   NVIDIA     NVDA     162.95      3.97       Technolo…   Semicon…   3.09    52.74       86.62      164.42      nvidia.…   ┃
+┃   Corpora…            USD         Trillion                                                                                ┃
+┃                                   USD                                                                                     ┃
+┃   Advanced   AMD      143.73      233.04     Technolo…   Semicon…   1.37    104.91      76.48      187.11      amd.com    ┃
+┃   Micro               USD         Billion                                                                                 ┃
+┃   Devices,                        USD                                                                                     ┃
+┃   Inc.                                                                                                                    ┃
+┃   Intel      INTC     23.67 USD   103.23     Technolo…   Semicon…   -4.48   N/A         17.67      37.16       intel.c…   ┃
+┃   Corpora…                        Billion                                                                                 ┃
+┃                                   USD                                                                                     ┃
+┃   Taiwan     TSM      229.62      1.19       Technolo…   Semicon…   8.58    26.76       133.57     237.58      tsmc.com   ┃
+┃   Semicon…            USD         Trillion                                                                                ┃
+┃   Manufac…                        USD                                                                                     ┃
+┃   Co.                                                                                                                     ┃
+┃                                                                                                                           ┃
+┃                                                                                                                           ┃
+┃                                                    Summary Information                                                    ┃
+┃                                                                                                                           ┃
+┃  • NVIDIA (NVDA):                                                                                                         ┃
+┃     • Employees: 36,000                                                                                                   ┃
+┃     • Analyst Recommendation: Strong Buy (57 opinions)                                                                    ┃
+┃     • Revenue Growth: 69.2%                                                                                               ┃
+┃     • Gross Margins: 70.11%                                                                                               ┃
+┃  • AMD (AMD):                                                                                                             ┃
+┃     • Employees: 28,000                                                                                                   ┃
+┃     • Analyst Recommendation: Buy (44 opinions)                                                                           ┃
+┃     • Revenue Growth: 35.9%                                                                                               ┃
+┃     • Gross Margins: 53.58%                                                                                               ┃
+┃  • Intel (INTC):                                                                                                          ┃
+┃     • Employees: 108,900                                                                                                  ┃
+┃     • Analyst Recommendation: Hold (35 opinions)                                                                          ┃
+┃     • Revenue Growth: -0.4%                                                                                               ┃
+┃     • Gross Margins: 33.12%                                                                                               ┃
+┃  • Taiwan Semiconductor (TSM):                                                                                            ┃
+┃     • Employees: N/A                                                                                                      ┃
+┃     • Analyst Recommendation: Strong Buy (15 opinions)                                                                    ┃
+┃     • Revenue Growth: 41.6%                                                                                               ┃
+┃     • Gross Margins: 57.41%                                                                                               ┃
+┃                                                                                                                           ┃
+┃ If you need further details or information, feel free to ask!                                                             ┃
+┃                                                                                                                           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┏━ Finance Agent Tool Calls ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                                                                                           ┃
+┃ • get_current_stock_price(symbol=NVDA)                                                                                    ┃
+┃                                                                                                                           ┃
+┃ • get_company_info(symbol=NVDA)                                                                                           ┃
+┃                                                                                                                           ┃
+┃ • get_current_stock_price(symbol=AMD)                                                                                     ┃
+┃                                                                                                                           ┃
+┃ • get_company_info(symbol=AMD)                                                                                            ┃
+┃                                                                                                                           ┃
+┃ • get_current_stock_price(symbol=INTC)                                                                                    ┃
+┃                                                                                                                           ┃
+┃ • get_company_info(symbol=INTC)                                                                                           ┃
+┃                                                                                                                           ┃
+┃ • get_current_stock_price(symbol=TSM)                                                                                     ┃
+┃                                                                                                                           ┃
+┃ • get_company_info(symbol=TSM)                                                                                            ┃
+┃                                                                                                                           ┃
+┃ • get_analyst_recommendations(symbol=NVDA)                                                                                ┃
+┃                                                                                                                           ┃
+┃ • get_analyst_recommendations(symbol=AMD)                                                                                 ┃
+┃                                                                                                                           ┃
+┃ • get_analyst_recommendations(symbol=INTC)                                                                                ┃
+┃                                                                                                                           ┃
+┃ • get_analyst_recommendations(symbol=TSM)                                                                                 ┃
+┃                                                                                                                           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┏━ Finance Agent Response ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                                                                                           ┃
+┃ Here are the analyst recommendations for NVIDIA (NVDA), AMD (AMD), Intel (INTC), and Taiwan Semiconductor (TSM):          ┃
+┃                                                                                                                           ┃
+┃                                                  Analyst Recommendations                                                  ┃
+┃                                                                                                                           ┃
+┃                                                                                                                           ┃
+┃   Company                      Strong Buy   Buy   Hold   Sell   Strong Sell                                               ┃
+┃  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━                                              ┃
+┃   NVIDIA (NVDA)                12           46    7      1      0                                                         ┃
+┃   AMD (AMD)                    7            27    16     0      0                                                         ┃
+┃   Intel (INTC)                 0            2     39     2      2                                                         ┃
+┃   Taiwan Semiconductor (TSM)   4            12    1      0      0                                                         ┃
+┃                                                                                                                           ┃
+┃                                                                                                                           ┃
+┃                                            Summary by Period (Recent 3 Months)                                            ┃
+┃                                                                                                                           ┃
+┃                                                                                                                           ┃
+┃   Company                      Period   Strong Buy   Buy   Hold   Sell   Strong Sell                                      ┃
+┃  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━                                     ┃
+┃   NVIDIA (NVDA)                0m       12           46    7      1      0                                                ┃
+┃                                -1m      12           45    6      1      0                                                ┃
+┃                                -2m      12           44    7      1      0                                                ┃
+┃   AMD (AMD)                    0m       7            27    16     0      0                                                ┃
+┃                                -1m      7            27    17     0      0                                                ┃
+┃                                -2m      8            24    17     1      0                                                ┃
+┃   Intel (INTC)                 0m       0            2     39     2      2                                                ┃
+┃                                -1m      0            2     39     2      2                                                ┃
+┃                                -2m      0            2     39     2      2                                                ┃
+┃   Taiwan Semiconductor (TSM)   0m       4            12    1      0      0                                                ┃
+┃                                -1m      4            12    1      0      0                                                ┃
+┃                                -2m      5            11    1      0      0                                                ┃
+┃                                -3m      4            13    1      0      0                                                ┃
+┃                                                                                                                           ┃
+┃                                                                                                                           ┃
+┃ This table summarizes the latest analyst recommendations for each company over the last three months. If you need further ┃
+┃ details or metrics, feel free to ask!                                                                                     ┃
+┃                                                                                                                           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┏━ Team Tool Calls ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                                                                                           ┃
+┃ • transfer_task_to_member(member_id=finance-agent, task_description=Get current stock prices and company                  ┃
+┃   information for NVIDIA (NVDA), AMD (AMD), Intel (INTC), and Taiwan Semiconductor (TSM).,                                ┃
+┃   expected_output=Current stock prices and company information for NVDA, AMD, INTC, and TSM.)                             ┃
+┃                                                                                                                           ┃
+┃ • transfer_task_to_member(member_id=finance-agent, task_description=Get analyst recommendations and growth                ┃
+┃   metrics for NVIDIA (NVDA), AMD (AMD), Intel (INTC), and Taiwan Semiconductor (TSM)., expected_output=Analyst            ┃
+┃   recommendations and growth metrics for NVDA, AMD, INTC, and TSM.)                                                       ┃
+┃                                                                                                                           ┃
+┃ • set_shared_context(state=Current analysis of the semiconductor market performance for NVIDIA, AMD, Intel,               ┃
+┃   and Taiwan Semiconductor completed, including stock prices, market cap, EPS, analyst recommendations, growth            ┃
+┃   metrics, and future outlook.)                                                                                           ┃
+┃                                                                                                                           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┏━ Response (50.4s) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                                                                                           ┃
+┃                                                                                                                           ┃
+┃                                                                                                                           ┃
+┃                           Current                                           Revenue                        Analyst        ┃
+┃   Company Name   Symbol   Stock Price    Market Cap     EPS     P/E Ratio   Growth         Gross Margins   Recommendat…   ┃
+┃  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ┃
+┃   NVIDIA         NVDA     162.95 USD     3.97           3.09    52.74       69.2%          70.11%          Strong Buy     ┃
+┃   Corporation                            Trillion USD                                                                     ┃
+┃   Advanced       AMD      143.73 USD     233.04         1.37    104.91      35.9%          53.58%          Buy            ┃
+┃   Micro                                  Billion USD                                                                      ┃
+┃   Devices,                                                                                                                ┃
+┃   Inc.                                                                                                                    ┃
+┃   Intel          INTC     23.67 USD      103.23         -4.48   N/A         -0.4%          33.12%          Hold           ┃
+┃   Corporation                            Billion USD                                                                      ┃
+┃   Taiwan         TSM      229.62 USD     1.19           8.58    26.76       41.6%          57.41%          Strong Buy     ┃
+┃   Semiconduct…                           Trillion USD                                                                     ┃
+┃   Manufacturi…                                                                                                            ┃
+┃   Co.                                                                                                                     ┃
+┃                                                                                                                           ┃
+┃                                                                                                                           ┃
+┃                                                          Summary                                                          ┃
+┃                                                                                                                           ┃
+┃  • NVIDIA (NVDA) leads in market cap and revenue growth, with strong analyst support and high gross margins.              ┃
+┃  • AMD (AMD) shows solid growth metrics but a significantly lower market cap compared to NVIDIA.                          ┃
+┃  • Intel (INTC) is currently struggling with negative EPS and stagnant revenue growth, reflected in its weaker analyst    ┃
+┃    recommendations.                                                                                                       ┃
+┃  • Taiwan Semiconductor (TSM) is positioned well with a strong market cap and analyst support, indicating a positive      ┃
+┃    outlook in the semiconductor sector.                                                                                   ┃
+┃                                                                                                                           ┃
+┃ This analysis provides a clear picture of each company's standing within the semiconductor market. If you need further    ┃
+┃ details or more specific metrics, feel free to ask!                                                                       ┃
+┃                                                                                                                           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+PS C:\Users\bilal\Desktop\agno-Test> 
